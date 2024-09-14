@@ -1,0 +1,182 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Food Design Website</title>
+    <!-------Font awesomem laibrary-------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--------------custom css-->
+    <link rel="stylesheet" href="css/styles3.css">
+
+</head>
+
+<body>
+    <!-----------------------header Section------------------->
+    <header class="head">
+        <a href="burger1.html" class="logo"><span>B</span>urger&nbsp;<i class="fas fa-hamburger "></i>&nbsp;<span>K</span>ing</a>
+        <nav class="navbar ">
+            <a href="burger1.html "><span>H</span>ome</a>
+            <a href="about.html "><span>A</span>bout</a>
+            <a href="services.html "><span>S</span>ervices</a>
+            <a href="menu.html "><span>M</span>enu</a>
+            <a href="contact.html "><span>C</span>ontact</a>
+            <a href="blog.html "><span>B</span>log</a>
+        </nav>
+        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+    </header>
+	<!-------------------blog Section--------------------------->
+    <section class="blog" id="blog">
+        <h4>Our Blog</h4>
+        <div class="blog-inner">
+            <div class="blog-content">
+                <div class="in-blog">
+                    <div class="im">
+                        <div class="in-blog-icon">
+                          
+                        </div>
+                        <img src="images/blog.jpg" alt="img">
+                    </div>
+                    <div class="in-blog-content">
+                        <h2>Burger is good..</h2>
+                        <p>Share dishes that highlight seasonal ingredients.</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="in-blog">
+                    <div class="im">
+                        <div class="in-blog-icon">
+                          
+                        </div>
+                        <img src="images/blog1.jpeg" alt="img">
+                    </div>
+                    <div class="in-blog-content">
+                        <h2>Amazing Burger,Best Quality</h2>
+                        <p>Explore and feature recipes from different cuisines
+						around the world.</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="in-blog">
+                    <div class="im">
+                        <div class="in-blog-icon">
+                         
+                        </div>
+                        <img src="images/blog2.jpeg" alt="img">
+                    </div>
+                    <div class="in-blog-content">
+                        <h2>Yummy Burger, we love it..</h2>
+                        <p>Create and showcase healthier versions of
+						classic recipes</p>
+					
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="blog-inner">
+            <div class="blog-content">
+                <div class="in-blog">
+                    <div class="im">
+                        <div class="in-blog-icon">
+                         
+                          
+                        </div>
+                        <img src="images/blog3.jpeg" alt="img">
+                    </div>
+                    <div class="in-blog-content">
+                        <h2>Burger Tips & Tricks..</h2>
+                        <p>Share kitchen hacks, cooking
+						techniques and useful tips.</p> 
+						
+                    </div>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="in-blog">
+                    <div class="im">
+                        <div class="in-blog-icon">
+                          
+                        </div>
+                        <img src="images/blog4.jpg" alt="img">
+                    </div>
+                    <div class="in-blog-content">
+                        <h2>Burger Spotlight</h2>
+                        <p>Highlight specific ingredients, discussing
+						their benefits and providing recipes.</p> 
+		
+                    </div>
+                </div>
+            </div>
+			<div class="blog-content">
+                <div class="in-blog">
+                    <div class="im">
+                        <div class="in-blog-icon">
+                           
+                        </div>
+                        <img src="images/blog5.jpeg" alt="img">
+                    </div>
+                    <div class="in-blog-content">
+                        <h2>Burger ingredients</h2>
+                        <p>Focus on recipes using locally
+						sourced or unique regional
+						ingredients.</p> 
+					
+                    </div>
+                </div>
+            </div>
+         
+    </section>
+	
+	
+		 <!--------------------footer section starts--------------------->
+    <footer>
+        <div class="copyright">
+            <p>Nicky_Jones De Developer</p>
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-google"></i>
+            </div>
+        </div>
+    </footer>
+    <!----------------------footer section ends---------->
+	<script>
+    let menu = document.querySelector('#menu-bar');
+    let head = document.querySelector('.head .navbar');
+
+    menu.onclick = () => {
+        head.classList.toggle('active');
+    };
+
+    window.onscroll = () => {
+        head.classList.remove('active');
+        if (window.scrollY > 60) {
+            document.querySelector('#scroll').classList.add('active');
+        } else {
+            document.querySelector('#scroll').classList.remove('active');
+        }
+    };
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementByClassName("btn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>
+	
